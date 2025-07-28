@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(to right, #0f0f0f, #1a001a);
+    color: #eee;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: linear-gradient(to right, #000000, #0d001a);
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    color: #00ffff;
+    font-weight: bold;
+}
+
+.menu a {
+    margin: 0 10px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.resume-btn {
+    background: #00ffff;
+    padding: 8px 20px;
+    border-radius: 6px;
+    color: #000;
+    text-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.hero {
+    display: flex;
+    padding: 80px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left .init {
+    color: #00ffff;
+    font-weight: bold;
+}
+
+.left h1 {
+    font-size: 60px;
+    color: #00ffff;
+    text-shadow: 0 0 20px #00ffff;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #aaa;
+}
+
+.system-box {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #00ffff;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.2);
+    font-family: monospace;
+}
+
+.system-box .label {
+    color: #00ffff;
+}
+
+.system-box .online {
+    color: #ff00ff;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00ffff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    color: #000;
+    margin-right: 20px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.btn.secondary {
+    background: #00ff99;
+    box-shadow: 0 0 10px #00ff99;
+}
+
+.right .image-glow {
+    position: relative;
+    border: 3px solid #00ffff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #00ffff;
+}
+
+.image-glow img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.badge {
+    position: absolute;
+    background: #111;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    box-shadow: 0 0 10px #f0f;
+}
+
+.top-left {
+    top: -15px;
+    left: -15px;
+}
+
+.bottom-right {
+    bottom: -15px;
+    right: -15px;
+    background: #3f007f;
+}
+
+.circle-badge {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ff0080;
+    border-radius: 50%;
+    bottom: 20px;
+    left: -10px;
+    box-shadow: 0 0 10px #ff0080;
+}
