@@ -2,3 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  @keyframes neon-pulse {
+    0%, 100% {
+      opacity: 1;
+      box-shadow: 0 0 2px #0ff, 0 0 8px #0ff, 0 0 8px #0ff;
+    }
+    50% {
+      opacity: 1;
+      box-shadow: 0 0 8px #0ff, 0 0 12px #0ff, 0 0 16px #0ff;
+    }
+  }
+
+  .animate-neon-pulse {
+    animation: neon-pulse 2.5s ease-in-out infinite;
+  }
+}

@@ -28,8 +28,6 @@
         const y = e.clientY / window.innerHeight * 100;
         bg.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(0, 255, 255, 0.08), transparent 50%)`;
     });
-
-
 </script>
 
 </html>

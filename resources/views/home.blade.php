@@ -19,11 +19,14 @@
             </button>
 
             <!-- Desktop menu -->
-            <nav class="hidden md:flex items-center space-x-8 md:ml">
+            <nav class="hidden md:flex items-center space-x-8">
                 <a href="#skills" class="hover:text-cyan-300">[SKILLS]</a>
                 <a href="#projects" class="hover:text-cyan-300">[PROJECTS]</a>
                 <a href="#contact" class="hover:text-cyan-300">[CONTACT]</a>
-                <a href="#" class="bg-cyan-400 text-black px-4 py-2 rounded shadow hover:bg-cyan-300 transition">>> RESUME</a>
+                <a href="{{ asset('files/cv_alvito-fahriel.pdf') }}" target="_blank"
+                class="bg-cyan-400 text-black px-4 py-2 rounded shadow hover:bg-cyan-300 transition">
+                    >> RESUME
+                </a>
             </nav>
         </div>
 
@@ -32,13 +35,16 @@
             <a href="#skills" class="block hover:text-cyan-300">[SKILLS]</a>
             <a href="#projects" class="block hover:text-cyan-300">[PROJECTS]</a>
             <a href="#contact" class="block hover:text-cyan-300">[CONTACT]</a>
-            <a href="#" class="block bg-cyan-400 text-black px-4 py-2 rounded shadow hover:bg-cyan-300 transition w-fit">>> RESUME</a>
+            <a href="{{ asset('files/cv_alvito-fahriel.pdf') }}" target="_blank"
+            class="block bg-cyan-400 text-black px-4 py-2 rounded shadow hover:bg-cyan-300 transition w-fit">
+                >> RESUME
+            </a>
         </div>
     </header>
 
     {{-- HERO --}}
-    <main class="grid grid-cols-1 md:grid-cols-2 items-center gap-10 mb-24 px-4 sm:px-6 lg:px-8">
-        <div class="text-center md:text-left">
+    <main class="relative grid grid-cols-1 md:grid-cols-2 items-center gap-10 mb-24 px-4 sm:px-6 lg:px-8">
+        <div class="text-center md:text-left z-10">
             <p class="text-cyan-400 mb-2 text-sm sm:text-base">>> INITIALIZING...</p>
             <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 tracking-widest text-white drop-shadow-[0_0_10px_cyan]">
                 ALVITO FAHRIEL
@@ -60,8 +66,8 @@
             </div>
         </div>
 
-        <div class="relative w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto mt-10 md:mt-0">
-            <div class="border-4 border-cyan-500 p-2 rounded-xl shadow-2xl relative">
+        <div class="relative w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto mt-10 md:mt-0 z-10">
+            <div class="border-4 border-cyan-500 p-2 rounded-xl shadow-2xl relative animate-neon-pulse">
                 <img src="{{ asset('images/profile.jpg') }}" alt="Profile" class="rounded w-full object-cover">
             </div>
         </div>
