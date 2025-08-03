@@ -42,6 +42,7 @@
         </div>
     </header>
 
+
     {{-- HERO --}}
     <main class="relative grid grid-cols-1 md:grid-cols-2 items-center gap-10 mb-24 px-4 sm:px-6 lg:px-8">
         <div class="text-center md:text-left z-10">
@@ -72,6 +73,8 @@
             </div>
         </div>
     </main>
+
+
 
     {{-- SKILLS --}}
     <section id="skills" class="pt-20 scroll-mt-2 text-center">

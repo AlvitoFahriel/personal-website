@@ -7,8 +7,43 @@
 </head>
 <body class="antialiased scroll-smooth">
     @yield('content')
-    <div id="mouse-bg" class="fixed inset-0 z-0 pointer-events-none"></div>
-
+    <div id="particles-js" class="fixed inset-0 z-0 pointer-events-none"></div>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script>
+            particlesJS("particles-js", {
+                "particles": {
+                "number": { "value": 360, "density": { "enable": true, "value_area": 1000 } },
+                "color": { "value": "#00ffff" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.2, "random": true },
+                "size": { "value": 1.0, "random": true },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 120,
+                    "color": "#00ffff",
+                    "opacity": 0.2,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+                },
+                "interactivity": {
+                "events": {
+                    "onhover": { "enable": true, "mode": "repulse" },
+                    "onclick": { "enable": false },
+                    "resize": true
+                }
+                },
+                "retina_detect": true
+            });
+        </script>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
@@ -21,13 +56,6 @@
         scale: 1.1,
     });
 
-
-    const bg = document.getElementById("mouse-bg");
-    document.addEventListener("mousemove", (e) => {
-        const x = e.clientX / window.innerWidth * 100;
-        const y = e.clientY / window.innerHeight * 100;
-        bg.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(0, 255, 255, 0.08), transparent 50%)`;
-    });
 </script>
 
 </html>
