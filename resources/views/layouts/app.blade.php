@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Alvito Fahriel</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="stylesheet" href="{{ asset('build/assets/app-BFL4krUQ.css') }}">
+    <script src="{{ asset('build/assets/app-DtCVKgHt.js') }}" defer></script>
 </head>
 <body class="antialiased scroll-smooth">
     @yield('content')
